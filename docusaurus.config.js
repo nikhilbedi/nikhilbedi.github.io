@@ -6,15 +6,15 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'My Site',
-  tagline: 'Dinosaurs are cool',
+  title: 'Mobile Data Flow',
+  tagline: 'Data You Need When You Want It',
   url: 'https://your-docusaurus-test-site.com',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
   organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  projectName: 'mobile-data-flow', // Usually your repo name.
 
   presets: [
     [
@@ -43,7 +43,7 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        title: 'My Site',
+        title: 'Mobile Data Flow',
         logo: {
           alt: 'My Site Logo',
           src: 'img/logo.svg',
@@ -83,11 +83,11 @@ const config = {
                 href: 'https://stackoverflow.com/questions/tagged/docusaurus',
               },
               {
-                label: 'Discord',
+                label: 'Slack',
                 href: 'https://discordapp.com/invite/docusaurus',
               },
               {
-                label: 'Twitter',
+                label: 'Email',
                 href: 'https://twitter.com/docusaurus',
               },
             ],
@@ -96,7 +96,7 @@ const config = {
             title: 'More',
             items: [
               {
-                label: 'Blog',
+                label: 'GraphQL',
                 to: '/blog',
               },
               {
@@ -106,7 +106,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} LinkedIn, Inc. Built with Docusaurus.`,
       },
       prism: {
         theme: lightCodeTheme,

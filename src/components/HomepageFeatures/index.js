@@ -8,8 +8,8 @@ const FeatureList = [
     Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        MDL was designed from the ground up to be easily installed and
+        used to get your feature up and running quickly.
       </>
     ),
   },
@@ -18,18 +18,18 @@ const FeatureList = [
     Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        We worry about managing the data for you, so you can worry about
+        building the UI.
       </>
     ),
   },
   {
-    title: 'Powered by React',
+    title: 'Powered by GraphQL',
     Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        Exposing our APIs through GraphQL puts you at the forefront
+        of easily declaring what data you want.
       </>
     ),
   },
