@@ -15,6 +15,10 @@ const config = {
   favicon: 'img/favicon.ico',
   organizationName: 'facebook', // Usually your GitHub org/user name.
   projectName: 'mobile-data-flow', // Usually your repo name.
+  trailingSlash: false,
+
+  plugins: [require.resolve("@cmfcmf/docusaurus-search-local")],
+ 
 
   presets: [
     [
@@ -25,12 +29,6 @@ const config = {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           editUrl: 'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-        },
-        blog: {
-          showReadingTime: true,
-          // Please change this to your repo.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -50,15 +48,56 @@ const config = {
         },
         items: [
           {
+            docId: 'android/index',
             type: 'doc',
-            docId: 'intro',
             position: 'left',
-            label: 'Tutorial',
+            label: 'Android',
           },
-          {to: '/blog', label: 'Blog', position: 'left'},
           {
-            href: 'https://github.com/facebook/docusaurus',
-            label: 'GitHub',
+            docId: 'ios/index',
+            type: 'doc',
+            position: 'left',
+            label: 'iOS',
+          },
+          {
+            docId: 'tools/index',
+            type: 'doc',
+            position: 'left',
+            label: 'Tools',
+          },
+          {
+            label: "Latest",
+            position: "right",
+            items: [
+              {
+                label: "0.67",
+                href: 'https://www.example.com'
+              },
+              {
+                label: "0.66",
+                href: 'https://www.example.com'
+              },
+              {
+                label: "0.65",
+                href: 'https://www.example.com'
+              },
+              {
+                label: "0.64",
+                href: 'https://www.example.com'
+              },
+              {
+                label: "0.63",
+                href: 'https://www.example.com'
+              },
+              {
+                label: "0.62",
+                href: 'https://www.example.com'
+              },
+            ],
+          },
+          {
+            href: 'https://jira01.corp.linkedin.com:8443/secure/CreateIssue.jspa?issuetype=1&pid=18270',
+            label: 'Support Ticket',
             position: 'right',
           },
         ],
@@ -66,15 +105,6 @@ const config = {
       footer: {
         style: 'dark',
         links: [
-          {
-            title: 'Docs',
-            items: [
-              {
-                label: 'Tutorial',
-                to: '/docs/intro',
-              },
-            ],
-          },
           {
             title: 'Community',
             items: [
@@ -97,7 +127,7 @@ const config = {
             items: [
               {
                 label: 'GraphQL',
-                to: '/blog',
+                to: 'https://graphql.org/',
               },
               {
                 label: 'GitHub',
@@ -112,6 +142,7 @@ const config = {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
       },
+
     }),
 };
 
