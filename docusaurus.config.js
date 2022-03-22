@@ -13,9 +13,11 @@ const config = {
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'mobile-data-flow', // Usually your repo name.
+  organizationName: 'linkedin', // Usually your GitHub org/user name.
+  projectName: 'nikhilbedi.github.io', // Usually your repo name.
   trailingSlash: false,
+  deploymentBranch: 'gh-pages',
+  
 
   plugins: [require.resolve("@cmfcmf/docusaurus-search-local")],
  
